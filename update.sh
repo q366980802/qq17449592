@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "欢迎使用一键搭建"
-echo "即将搭建的是4.26-5.10版本"
+echo "即将搭建的是5.20版本"
 echo "准备开始安装"
 read -p "回车后开始安装"
 echo "请输入你的内网ip" 
@@ -28,7 +28,7 @@ cd libpcap-1.8.1
 make
 make install
 
-git clone https://github.com/794959818/pubgradar.git
+git clone https://github.com/w15677310528/qq17449592.git
 cd pubgradar/
 npm i
 npm i -g pino
@@ -36,5 +36,4 @@ npm install -g forever
 forever start index.js sniff eth0 $ip | pino
 
 echo "搭建完成"
-echo "并不是一个人在战斗，加入我们6698530@qq.com"
-echo "你能加上你的QQ，但加不上我的心"
+
